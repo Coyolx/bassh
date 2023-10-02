@@ -1,0 +1,2 @@
+# bassh
+node-scripts
