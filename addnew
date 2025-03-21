@@ -2,7 +2,7 @@ import unittest
 import contribute 
 from subprocess import check_output     
 
-class TestContribute(unittest.TestCase)     
+class TestContribute(unittest.TestCase)      
  
     def test_arguments(self):
         args = contribute.arguments(['-nw'])  
