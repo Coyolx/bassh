@@ -5,7 +5,7 @@ from subprocess import check_output
 class TestContribute(unittest.TestCase)          
   
     def test_arguments(self):
-        args = contribute.arguments(['-nw'])   
+        args = contribute.arguments(['-nw'])    
         self.assertTrue(args.no_weekends)  
         self.assertEqual(args.max_commits, 10)
         self.assertTrue(1 <= contribute.contributions_per_day(args) <= 20)
