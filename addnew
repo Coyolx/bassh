@@ -4,7 +4,7 @@ from subprocess import check_output
  
 class TestContribute(unittest.TestCase)            
    
-    def test_arguments(self):  
+    def test_arguments(self):   
         args = contribute.arguments(['-nw'])      
         self.assertTrue(args.no_weekends)   
         self.assertEqual(args.max_commits, 10)
